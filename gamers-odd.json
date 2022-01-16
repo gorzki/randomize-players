@@ -1,0 +1,37 @@
+[
+  {
+    "firstname": "Mateusz",
+    "lastname": "Wicher",
+    "email": "mateusz.wicher@example.com"
+  },
+  {
+    "firstname": "Wanda",
+    "lastname": "Potrawa",
+    "email": "wanda.potrawa@example.com"
+  },
+  {
+    "firstname": "Krystyna",
+    "lastname": "Powiało",
+    "email": "krysia999@example.com"
+  },
+  {
+    "firstname": "Karolina",
+    "lastname": "Mielec",
+    "email": "karolcia.m@example.com"
+  },
+  {
+    "firstname": "Bartosz",
+    "lastname": "Mikuła",
+    "email": "bartosz.mikuła@example.com"
+  },
+  {
+    "firstname": "Roman",
+    "lastname": "Wolski",
+    "email": "roman.wolski@example.com"
+  },
+  {
+    "firstname": "Mieszko",
+    "lastname": "Ulep",
+    "email": "mieszko.ulep@example.com"
+  }
+]

@@ -1,0 +1,6 @@
+= form_for form, url: solitaire_index_path do |f|
+  = f.hidden_field :class
+  = f.file_field :file
+  - if form.errors[:file].present?
+    %p{style: 'color: red'}= form.errors[:file].join(', ')
+  = f.submit 'Send'
