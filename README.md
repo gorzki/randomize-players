@@ -30,14 +30,15 @@ Ogólnie to do rozwiązania tego zadania używanie framework'a jest jak:
         2) zwrócenie błędu jeżeli przesłany plik ma zły format
 3. [__SolitaireService__](https://github.com/gorzki/randomize-players/blob/main/app/services/solitaire_service.rb) - serwis zarządzający plikiem wysłanym przez klienta
     1) `call` - wywołąnie wszystkich metod wymaganych przez klienta
-    2) `players` - przeparsowanie pliku klienta na format `json` oraz utworzenie obiektów ze struktury pliku.
+    2) `players` - przeparsowanie pliku klienta na format `json` oraz utworzenie obiektów ze struktury pliku. `SolitairePlayerObject`
     3) `draw` - wylosowanie par pojedynków zawodników `Solitiare::DrawPairsCommand`
     4) `send_emails` - wysłanie emaili do zawodników `Solitaire::SendEmailCommand`
     5) `generate_output_file` - wygenerowanie pliku z informacjami o parach przeciwników dla klienta `Solitaire::GenerateOutputCommand`
-4) [__Solitaire::DrawPairsCommand__](https://github.com/gorzki/randomize-players/blob/main/app/commands/solitaire/draw_pairs_command.rb) - komenda do obsługi losowania par, losuje pary przeciwników dla zawodników
-5) [__Solitaire::SendEmailCommand__](https://github.com/gorzki/randomize-players/blob/main/app/commands/solitaire/send_email_command.rb) - komenda do obsługi mailera, zajmuje się wysłaniem emaili dla wylosowanych par
-6) [__Solitaire::GenerateOutputCommand__](https://github.com/gorzki/randomize-players/blob/main/app/commands/solitaire/generate_output_command.rb) - komenda do wygenerowania pliku txt z informacją o rozlosowanych parach
-7) [__ApplicationMailer__](https://github.com/gorzki/randomize-players/blob/main/app/mailers/application_mailer.rb) - plik do konfiguracji wiadomości email
+4. [__SolitairePlayerObject__](https://github.com/gorzki/randomize-players/blob/main/app/value_objects/solitaire_player_object.rb) - obiekt reprezentujący sturkturę zawdonika z pobranego pliku
+5. [__Solitaire::DrawPairsCommand__](https://github.com/gorzki/randomize-players/blob/main/app/commands/solitaire/draw_pairs_command.rb) - komenda do obsługi losowania par, losuje pary przeciwników dla zawodników
+6. [__Solitaire::SendEmailCommand__](https://github.com/gorzki/randomize-players/blob/main/app/commands/solitaire/send_email_command.rb) - komenda do obsługi mailera, zajmuje się wysłaniem emaili dla wylosowanych par
+7. [__Solitaire::GenerateOutputCommand__](https://github.com/gorzki/randomize-players/blob/main/app/commands/solitaire/generate_output_command.rb) - komenda do wygenerowania pliku txt z informacją o rozlosowanych parach
+8. [__ApplicationMailer__](https://github.com/gorzki/randomize-players/blob/main/app/mailers/application_mailer.rb) - plik do konfiguracji wiadomości email
     1) `solitaire_game` - wysyła wiadomości do gracza z informacją o przeciwniku
 
 
